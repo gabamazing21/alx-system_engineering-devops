@@ -1,1 +1,1 @@
-To create script for working with linux os
+script for working with shells
