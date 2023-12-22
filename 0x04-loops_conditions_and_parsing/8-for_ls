@@ -1,0 +1,8 @@
+#!/usr/bin/env bash
+#print file in a particular format
+
+for i in *; do
+	if [[ $i == *-* ]]; then
+		echo "${i#*-}"
+	fi
+done
