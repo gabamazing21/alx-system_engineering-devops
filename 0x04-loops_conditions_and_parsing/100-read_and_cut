@@ -1,0 +1,5 @@
+#!/usr/bin/env bash
+#display file content
+directory="/etc/passwd"
+for file in "$directory"/*; do
+	echo "$( awk -F )"
