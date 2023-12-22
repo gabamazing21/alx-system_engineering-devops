@@ -2,14 +2,19 @@
 #Superstitious numbers
 counter=1
 while [ $counter -lt 21 ]; do
-	if [ $counter -eq 4 ]; then
-		echo "bad luck from China"
-	elif [ $counter -eq 9 ]; then
-		echo "bad luck from Japan"
-	elif [ $counter -eq 17 ]; then
-		echo "bad luck from Italy"
-	else
-		echo "$counter"
-	fi
+	case $counter in
+		4)
+			echo "bad luck from China"
+			;;
+		9)
+			echo "bad luck from Japan"
+			;;
+		17)
+			echo "bad luck from Italy"
+			;;
+		*)
+			echo "$counter"
+			;;
+	esac
 	((counter++))
 done
