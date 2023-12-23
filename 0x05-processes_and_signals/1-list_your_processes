@@ -1,2 +1,2 @@
 #!/usr/bin/env bash
-top -eo user, tty, pid, ppid, stat, pcpu, pmem, args --forest
+ps -eo pid,ppid,user,tty,stat,pcpu,pmem,args --forest
