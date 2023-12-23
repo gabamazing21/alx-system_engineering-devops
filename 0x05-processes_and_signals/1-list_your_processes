@@ -1,2 +1,2 @@
 #!/usr/bin/env bash
-ps -eo pid,ppid,user,tty,stat,pcpu,pmem,args --forest
+ps aux --forest
