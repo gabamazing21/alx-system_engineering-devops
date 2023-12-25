@@ -1,5 +1,5 @@
 #!/usr/bin/env bash
-#display file content
-directory="/etc/passwd"
-for file in "$directory"/*; do
-	echo "$( awk -F )"
+#display file content clearn cut
+while IFS=: read -r username user_id _ home_directory _;do
+	echo "$usernam:$user_id:$home_directory"
+done < /etc/passwd
