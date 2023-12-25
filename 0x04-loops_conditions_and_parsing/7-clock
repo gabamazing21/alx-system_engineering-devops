@@ -2,7 +2,7 @@
 # 12 hour clock project
 counter_minute=1
 counter_hour=0
-while [ $counter_hour -lt 12 ]; do
+while [ $counter_hour -lt 13 ]; do
 	echo "Hour: $counter_hour"
 	while [ $counter_minute -lt 60 ]; do
 		echo "$counter_minute"
