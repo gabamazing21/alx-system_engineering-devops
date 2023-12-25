@@ -1,5 +1,5 @@
 #!/usr/bin/env bash
-# 12 hour clock
+# 12 hour clock project
 counter_minute=1
 counter_hour=0
 while [ $counter_hour -lt 12 ]; do
