@@ -2,7 +2,5 @@
 #print file in a particular format
 mapfile -t files < <(ls)
 for i in "${files[@]}"; do
-	if [[ $i == *-* ]]; then
-		echo "${i#*-}"
-	fi
+	echo "${i#*-}"
 done
