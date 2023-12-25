@@ -17,7 +17,6 @@ while [ $counter -lt 21 ]; do
 			;;
 		*)
 			echo "$counter"
-			echo "$counter"
 			;;
 	esac
 	((counter++))
