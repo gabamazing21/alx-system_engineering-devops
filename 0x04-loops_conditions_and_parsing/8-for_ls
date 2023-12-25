@@ -1,7 +1,7 @@
 #!/usr/bin/env bash
 #print file in a particular format
-LIST="(ls -ls)"
-for i in LIST; do
+mapfile -t files < <(ls)
+for i in "${files[@]}"; do
 	if [[ $i == *-* ]]; then
 		echo "${i#*-}"
 	fi
