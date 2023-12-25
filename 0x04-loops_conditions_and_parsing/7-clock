@@ -2,8 +2,10 @@
 # 12 hour clock
 counter_minute=1
 counter_hour=0
-echo "Hour: $counter_hour"
 while [ $counter_hour -lt 12 ]; do
+	if [ $counter_hour -eq 0 ]; then
+		echo "Hour: $counter_hour"
+	fi
 	if [ $counter_minute -eq 60 ]; then
 		((counter_hour++))
 		echo "Hour: $counter_hour"
