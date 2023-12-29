@@ -1,3 +1,4 @@
 #!/usr/bin/env bash
-ps aux| grep [b]ash
+# checking for user process
 # shellcheck disable=SC2009
+ps aux | grep bash
