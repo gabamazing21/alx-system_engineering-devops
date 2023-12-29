@@ -1,0 +1,3 @@
+#!/usr/bin/env bash
+# display PID along with process name
+ps aux | grep bash
