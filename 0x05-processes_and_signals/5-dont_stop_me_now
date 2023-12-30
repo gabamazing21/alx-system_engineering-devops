@@ -1,0 +1,3 @@
+#!/usr/bin/env bash
+# check if if other terminal is open then we close it using kill
+pgrep -f 4-to_infinity_and_beyond | xargs kill
