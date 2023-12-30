@@ -1,0 +1,8 @@
+#!/usr/bin/env bash
+#learn when signal is sent a process
+trap 'echo "I am invincible!!!" ' SIGTERM
+while True; do
+	echo "To infinity and beyond"
+	sleep 2
+done
+
