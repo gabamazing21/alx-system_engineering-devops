@@ -1,8 +1,7 @@
 #!/usr/bin/env bash
-#learn when signal is sent a process
+#trapping a signal event using trap
 trap 'echo "I am invincible!!!" ' SIGTERM
-while True; do
+while true; do
 	echo "To infinity and beyond"
 	sleep 2
 done
-
