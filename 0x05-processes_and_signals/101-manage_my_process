@@ -1,0 +1,32 @@
+#!/usr/bin/env bash
+# managing process, daemon background activity
+output="/var/run/my_process.pid"
+ start_func ()
+ {
+	 ./manage_my_process
+	 echo "$!" | sudo tee "$output" > /dev/null
+ }
+
+ stop_func ()
+ {
+	 pkill -f "./manage_my_process"
+	 sudo rm "$output"
+ }
+
+ case $1 in
+	start)
+		 start_func)
+		 echo "manage_my_process started"
+		 ;;
+	stop)
+		stop_func)
+		echo "manage_my_process stopped"
+		;;
+	restart)
+		stop_func)
+		start_func)
+		echo "manage_my_process restarted"
+		;;
+	*)
+		echo "Usage: manage_my_process {start|stop|restart}" ;;
+	esac
