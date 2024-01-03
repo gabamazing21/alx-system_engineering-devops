@@ -1,3 +1,4 @@
 #!/usr/bin/env bash
 #sorting based on ip and status code occurrence
-awk '{count[$1 " " $9]++} END {for (ip_status in count) print count [ip_status], " ", ip_status}' apache-access.log | sort -nr
+fname=apache-access.log
+awk '{print $1,$9}' $fname | sort | uniq -c | sort -r
