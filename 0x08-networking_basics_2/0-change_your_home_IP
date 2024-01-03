@@ -1,0 +1,6 @@
+#!/usr/bin/env bash
+#basic networking chaning and re-routing ip address
+cp /etc/hosts ~/hosts.new
+sudo sed -i "s/^127.0.0.1*/127.0.0.2 localhost/g" ~/hosts.new
+echo "8.8.8.8 facebook.com" >> ~/hosts.new
+sudo cp -f ~/hosts.new /etc/hosts
