@@ -1,2 +1,3 @@
 #!/usr/bin/env bash
-#bring ports listening
+# check Active Internet connections (w/o servers) and Active UNIX domain sockets (w/o servers)
+netstat -p
