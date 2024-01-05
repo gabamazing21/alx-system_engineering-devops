@@ -1,0 +1,3 @@
+#!/usr/bin/env bash
+#extracting ip from machine using ifconfig
+ifconfig | grep "inet\s" | awk '{print $2}'
