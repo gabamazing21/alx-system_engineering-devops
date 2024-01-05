@@ -1,0 +1,3 @@
+#!/usr/bin/env bash
+#telnet and nc lessons
+nc -lvp 98
