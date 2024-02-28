@@ -1,0 +1,2 @@
+#!/usr/bin/env bash
+ssh -i ~/Developer/learning_bash/gabriel_rsa_key.pub ubuntu@18.204.3.173
