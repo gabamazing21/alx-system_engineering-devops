@@ -1,2 +1,2 @@
 #!/usr/bin/env bash
-ssh -i ~/Developer/learning_bash/gabriel_rsa_key.pem ubuntu@52.91.123.102
+ssh -i ~/.ssh/school ubuntu@52.91.123.102
