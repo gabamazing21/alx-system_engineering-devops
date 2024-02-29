@@ -1,0 +1,9 @@
+#!/usr/bin/env bash
+#Redirection
+sudo sed -i '/location \/ {/a\
+\ \ \ location /redirect_me { \n\
+\ \ \ \ return 301 https://www.youtube.com/watch?v=QH2-TGUlwu4; \n\
+\ \ \ }' /etc/nginx/sites-enabled/default
+
+sudo service nginx reload
+
