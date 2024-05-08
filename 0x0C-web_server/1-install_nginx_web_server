@@ -1,6 +1,5 @@
 #!/usr/bin/env bash
 #install and setting nginx
 sudo apt update -y && sudo apt install nginx -y
-# add to the  configuration file
 sudo bash -c 'echo "Hello World!" > /var/www/html/index.html'
 sudo service nginx restart
