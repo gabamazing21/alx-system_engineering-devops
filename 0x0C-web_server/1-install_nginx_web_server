@@ -2,10 +2,5 @@
 #install and setting nginx
 sudo apt update -y && sudo apt install nginx -y
 # add to the  configuration file
-echo hello world > /tmp/test
-sed -i 's/80/8080/g' /etc/nginx/sites-enabled/default
-echo Hello World! > /var/www/html/index.html
-sudo service nginx reload
-sudo service nginx status
-echo "Nginx installation and configuration completed."
-
+sudo bash -c 'echo "Hello World!" > /var/www/html/index.html'
+sudo service nginx restart
