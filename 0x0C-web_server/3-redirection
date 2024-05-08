@@ -1,9 +1,11 @@
 #!/usr/bin/env bash
-#Redirection
-sudo sed -i '/location \/ {/a\
-\ \ \ location /redirect_me { \n\
-\ \ \ \ return 301 https://www.youtube.com/watch?v=QH2-TGUlwu4; \n\
-\ \ \ }' /etc/nginx/sites-enabled/default
+# performing a 301 moved permanently
 
-sudo service nginx reload
+sudo apt-get update
+sudo apt-get install -y nginx
+echo "Hello World!" | sudo tee /var/www/html/index.html
+string_repl="server_name _;\n\trewrite ^\/redirect_me https:\/\/github.com\/gabamazing21\/ 301;"
 
+sed -i "s/server_name _;/$string_repl/" /etc/nginx/site-enabled/default
+
+sudo service nginx restart
