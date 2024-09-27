@@ -1,3 +1,0 @@
-#!/usr/bin/env bash
-# check Active Internet connections (w/o servers) and Active UNIX domain sockets (w/o servers)
-netstat -p
