@@ -1,3 +1,0 @@
-#!/usr/bin/env bash
-#pring an IP in count of 5
-ping -c 5 $1

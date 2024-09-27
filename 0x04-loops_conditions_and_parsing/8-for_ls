@@ -1,6 +1,0 @@
-#!/usr/bin/env bash
-#print file in a particular format
-mapfile -t files < <(ls)
-for i in "${files[@]}"; do
-	echo "${i#*-}"
-done

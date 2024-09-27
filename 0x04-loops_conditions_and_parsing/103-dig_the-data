@@ -1,4 +1,0 @@
-#!/usr/bin/env bash
-#sorting based on ip and status code occurrence
-fname=apache-access.log
-awk '{print $1,$9}' $fname | sort | uniq -c | sort -r
